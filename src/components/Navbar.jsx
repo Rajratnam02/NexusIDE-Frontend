@@ -3,7 +3,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='flex items-center text-white justify-between px-8 py-6 max-w-7xl mx-auto'>
+    <div className='flex items-center justify-between px-8 py-6 max-w-7xl mx-auto'>
       
       <div className='flex items-center gap-2 group cursor-pointer'>
         <div className='bg-blue-600 p-1.5 rounded-lg group-hover:rotate-12 transition-transform'>
