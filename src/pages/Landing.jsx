@@ -2,8 +2,10 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import { Shield, Terminal, Users, Zap } from 'lucide-react'
 import FeatureCard from '../components/FeatureCard'
+import { useNavigate } from 'react-router-dom'
 
 const Landing = () => {
+  const navigate = useNavigate();
   return (
     <div className='bg-[#0A0A0A] min-h-screen pb-10 text-white'>
       <Navbar />
@@ -21,11 +23,11 @@ const Landing = () => {
         </div>
 
         <div className=' gap-10 flex'>
-          <p className='w-full cursor-pointer sm:w-auto px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-gray-200 transition-all flex items-center justify-center gap-2'>
+          <p onClick={()=>{navigate('/join')}} className='w-full cursor-pointer sm:w-auto px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-gray-200 transition-all flex items-center justify-center gap-2'>
             <Users size={20} />
             Join a Room
           </p>
-          <p className='w-full cursor-pointer sm:w-auto px-8 py-4 bg-[#1E2939] text-white font-bold rounded-xl hover:bg-[#28374d] transition-all flex items-center justify-center gap-2'>
+          <p onClick={()=>{navigate('/dashboard')}} className='w-full cursor-pointer sm:w-auto px-8 py-4 bg-[#1E2939] text-white font-bold rounded-xl hover:bg-[#28374d] transition-all flex items-center justify-center gap-2'>
             Create New Project
           </p>
         </div>
