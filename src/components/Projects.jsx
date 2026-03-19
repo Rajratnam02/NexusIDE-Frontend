@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
-    <div className='flex-1 pb-7 flex-col flex min-h-screen'>
+    <div className='flex-1 pb-7 flex-col flex '>
         
         <div className='flex mx-15 mt-15 items-end justify-between'>
           <div>
